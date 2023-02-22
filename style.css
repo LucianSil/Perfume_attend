@@ -1,0 +1,268 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+
+
+:root
+{
+    --Darkcyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --Darkblue: blue: hsl(228, 12%, 48%);
+    --darkgray: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+}
+
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size:14px;
+}
+
+
+
+html
+{
+
+    background-color: var(--cream);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+
+body
+
+{
+    max-width: 375px;
+    max-height: 667px;
+    border-radius: 12px;
+    padding-top: 5%;
+    padding-left: 10px;
+    padding-right: 10px;
+
+
+}
+
+
+.container
+
+{
+    background-color: var(--white);
+    border-radius: 12px;
+    padding-bottom: 15px;
+    min-width: 350px;
+    min-height: 600px;
+    position: absolute;
+
+    
+}
+
+@media screen and (min-width:800px) {
+    .container {
+        min-width: 700px;
+        min-height: 532px;
+        border-radius: 13px;
+        position: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+
+    }
+    
+}
+
+
+
+.imagens img
+{   border-radius: 12px 12px 0 0;
+    width: 99%;
+    position: relative;
+
+    
+
+}
+
+@media screen and (min-width:800px) {
+    .imagens img:first-child {
+        display: none;
+    }
+}
+
+
+.desktopimage
+{
+    display: none;
+}
+
+@media screen and (min-width:800px) {
+    .imagens img:nth-child(2) {
+        display: flex;
+        position: absolute;
+        border-radius: 12px 0 0 12px;
+        width: 355px;
+    }
+
+
+    
+}
+
+
+
+
+.text p:first-child
+{
+    font-family: 'Montserrat', monospace;
+    margin-left: 5%;
+    margin-top: 0.75rem;
+    margin-bottom: 1rem;
+    color: var(--darkgray);
+    font-size: 1rem;
+    letter-spacing: 0.25rem;
+    position: relative;
+}
+
+@media screen and (min-width:800px) {
+    .text p:first-child {
+        margin-left: 380px;
+        margin-top: 30px;
+    }
+
+    .text h2 {
+        margin-left: 360px;
+        margin-top: 30px;
+    }
+    .text p:nth-child(3) 
+    {
+        margin-left: 360px;
+        margin-top: 30px;
+        width: 200px;
+        font-size: 70px;
+    }
+
+    .old 
+    {
+        padding-top: 20px;
+        text-align: center;
+        
+    }
+
+    .btn
+    {
+        margin-left: 390px;
+        margin-top: 30px;
+        width: 280px;
+
+        
+    }
+    .btn img 
+    {
+        padding-right: px;
+    }
+
+    
+}
+
+
+
+@media screen and (min-width:800px) {
+    .imagens img:first-child {
+        display: none;
+    }
+    
+}
+
+.text h2
+{
+    width: 100%;
+    font-family: 'Fraunces', serif;
+    font-size: 2.5rem;
+    padding-left: 5%;
+    line-height: 33px;
+    padding-right: 5px;
+    padding-bottom: 15px;
+    position: relative;
+}
+
+
+.text p:nth-child(3) 
+
+{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: var(--darkgray);
+    padding-left: 5%;
+    padding-right: 7%;
+    line-height: 1.5rem;
+    padding-bottom: 1rem;
+    position: relative;
+}
+
+
+
+
+.price
+{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    position: relative;
+}
+
+.price p:first-child
+
+{
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    padding-right: 15px;
+    min-width: 45%;
+    font-size: 2rem;
+    text-align: right;
+    color: var(--Darkcyan);
+    position: relative;
+}
+
+.price p:nth-child(2)
+
+{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--darkgray);
+    text-decoration: line-through;
+    position: relative;
+}
+
+
+.btn
+
+{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.button
+
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Darkcyan);
+    width: 290px;
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+    color: var(--white);
+    font-size: 700;
+
+
+}
+
+
+
